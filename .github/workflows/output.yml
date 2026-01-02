@@ -7,4 +7,4 @@ jobs:
       - name: Output Github context
         run: | 
           echo "Repository ${{ github.repository }}"
-          echo "Author ${{ github.author }}"
+          echo "Author ${{ github.repository_owner }}"
