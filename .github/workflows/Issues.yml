@@ -8,4 +8,6 @@ jobs:
         run: | 
           echo "Repository ${{ github.repository }}"
           echo "Author ${{ github.repository_owner }}"
+          echo "Github context "${{ toJSON(github) }}"
           echo "Event info  "${{ toJSON(github.event) }}"
+
