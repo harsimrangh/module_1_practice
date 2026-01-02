@@ -6,8 +6,8 @@ jobs:
     steps: 
       - name: Output Github context
         run: | 
+          echo "Context ${{ toJSON(github) }}"
           echo "Repository ${{ github.repository }}"
           echo "Author ${{ github.repository_owner }}"
-          echo "Github context "${{ toJSON(github) }}"
-          echo "Event info  "${{ toJSON(github.event) }}"
+          
 
