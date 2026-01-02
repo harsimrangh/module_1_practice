@@ -9,5 +9,6 @@ jobs:
           echo "Context ${{ toJSON(github) }}"
           echo "Repository ${{ github.repository }}"
           echo "Author ${{ github.repository_owner }}"
+          echo "Event ${{ toJSON(github.event) }}"
           
 
